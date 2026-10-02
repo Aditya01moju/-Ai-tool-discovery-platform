@@ -6,7 +6,9 @@ Base = declarative_base()
 
 class AITool(Base):
     __tablename__ = "ai_tools"
-    
+
+
+    # Assigning default values to all the attributes
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
     description = Column(Text)
