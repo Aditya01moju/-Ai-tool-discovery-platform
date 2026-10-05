@@ -7,6 +7,7 @@ from app.routes import tools, news
 # Create tables
 Base.metadata.create_all(bind=engine)
 
+# Creating a fast Api object that contains title, description and the actual version 
 app = FastAPI(
     title="AI Tools Discovery Platform API",
     description="An advanced AI Tools discovery platform with real-time news and notifications",
