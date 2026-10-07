@@ -30,7 +30,7 @@ app.include_router(news.router)
 @app.get("/")
 async def root():
     return {
-        "message": "Welcome to AI Tools Discovery Platform API",
+        "message": "Welcome to AI Tools Discovery Platform API", #this message will be displayed on the user's end.
         "version": "1.0.0",
         "docs": "/docs",
         "endpoints": {
