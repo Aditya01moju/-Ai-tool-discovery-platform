@@ -20,6 +20,8 @@ def get_news(news_id: int, db: Session = Depends(get_db)):
         return {"error": "News not found"}
     return news
 
+
+
 @router.get("/category/{category}", response_model=list[NewsSchema])
 def get_news_by_category(category: str, db: Session = Depends(get_db)):
     """Get news by category"""
